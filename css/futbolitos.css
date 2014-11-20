@@ -1,0 +1,377 @@
+@font-face {
+  font-family: 'Bariol';
+  src: url("../fonts/Bariol_Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cartwheel';
+  src: url("../fonts/Cartwheel.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+	background-color: #00376a;
+	font-family: 'Bariol';
+}
+
+h2{	
+	font-size: 3rem
+}
+
+h2.title-section{
+	font-family: 'Cartwheel';
+	margin: 4rem 0rem;
+}
+
+p{
+	font-size: 1.1rem;
+	line-height: 1.4rem;
+}
+
+header{	
+	background-color: #00376a;
+	position: fixed;
+	clear: both;
+	width: 100%;
+	z-index: 1000;
+}
+
+header .header-content{	
+	position: relative;
+}
+
+header h1{
+	display: inline-block;	
+	padding: 0px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+header  img{
+	display: block;
+	margin: 0px auto;
+	padding: 0.4em;	
+	max-width: 350px;
+	width: 100%;
+}
+
+header .login{
+	color: white;
+	display: inline-block;	
+	margin: -100px;
+	padding: 0px;
+	right: 18%;
+	position: absolute;		
+}
+
+header .login a{
+	color: white;
+}
+
+header .top-nav{
+	border-bottom: 2px solid #3699f3;
+	border-top: 2px solid #3699f3;
+	background: #4aa3f4;
+	width: 100%;
+	
+	background: -moz-linear-gradient(top,  #4aa3f4 3%, #3390e5 98%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#4aa3f4), color-stop(98%,#3390e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4aa3f4 3%,#3390e5 98%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4aa3f4 3%,#3390e5 98%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4aa3f4 3%,#3390e5 98%); /* IE10+ */
+	background: linear-gradient(to bottom,  #4aa3f4 3%,#3390e5 98%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4aa3f4', endColorstr='#3390e5',GradientType=0 ); /* IE6-9 */
+
+}
+
+header .top-nav ul{
+	margin: 0px;
+	padding: 0px;	
+}
+
+header .top-nav li{
+	display: inline-block;	
+	text-align: center;
+	vertical-align: top;	
+	width: 16%;
+}
+
+header .top-nav li a{
+	color: white;	
+	display: block;
+	padding: 0.3em;	
+}
+
+header .top-nav li a:hover{
+	text-decoration: underline !important;
+}
+
+header .top-nav li a.selected{
+	font-weight: bold;
+}
+
+header .top-nav li a.selected:hover{
+	cursor: default;
+	text-decoration: none !important;
+}
+
+section.home{	
+	padding: 12em 0em 0em;
+	min-height: 400px;
+}
+
+section.home h2.title-section{
+	margin: 1rem 0rem;
+}
+
+section.home > div{	
+	background: transparent url('../img/img_section_home.png') no-repeat bottom left;
+	background-size: 65% auto;
+	min-height: 400px;
+}
+
+section.home .home-content{
+	color: white;	
+	padding: 2em;
+}
+
+section.home .home-content h2{
+	color: white;		
+	margin-bottom: 1em;
+}
+
+section.home .home-content p{
+	font-size: 16px	
+}
+
+section.who{	
+	background: #4aa3f4; /* Old browsers */
+	color: white;
+	min-height: 400px;		
+
+}
+
+section.who h2{		
+	color: white;		
+}
+
+section.who .who-content{
+	padding-bottom: 130px;
+	position: relative;	
+}
+
+section.who .who-players ul{	
+	color: white;
+	clear: both;
+	list-style: none;
+	margin: 0px 0px 2em;	
+	padding: 0em 2em;	
+	text-align: center;
+}
+
+section.who .who-players ul li{	
+	margin-top: 0px;
+	padding: 0px;		
+}
+
+section.who .who-players ul a.selected{	
+}
+
+section.who .who-players ul img{	
+	width: 100%;
+}
+
+
+section.who .who-players ul a{
+	border-radius: 50%;
+	box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);	
+	display: block;			
+	height: 100px;
+	margin: 0px auto;	
+	overflow: hidden;
+	width: 100px;
+
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);	
+}
+
+section.who .who-players ul span{
+	display: block;
+	font-family: 'Cartwheel';
+	font-size: 1.2rem;
+	margin-top: 0.5rem;
+	text-align: center;
+}
+
+section.who .who-players ul a.ro{
+	border: 4px solid #005ea9;
+}
+
+section.who .who-players ul a.robogol{
+	border: 4px solid #f26b14;
+}
+
+section.who .who-players ul a.ed{
+	border: 4px solid #e51b24;
+}
+
+section.who .who-players ul a.d10s{
+	border: 4px solid #f8b212;
+}
+
+section.who .who-players ul a.zombinho{
+	border: 4px solid #731472;
+}
+
+section.who .who-players ul a.tike{
+	border: 4px solid #055e00;
+}
+
+section.who .who-players-content h3{
+	background-color: white;
+	box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);	
+	bottom: -14px;	
+	display: inline-block;
+	font-family: 'Cartwheel';
+	font-size: 2rem;
+	margin: 0px 0px 0px 20px;
+	padding: 0.8em 0.8em 0.2em;
+	position: relative;
+	z-index: 100;
+
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);	
+}
+
+section.who .who-players-content h3:after{	
+	content:'';
+	width: 110%;
+	height: 40px;
+	background: #4aa3f4;	
+	position:absolute;  
+	bottom:0%;
+	left:-5px;
+	top: 100%;
+	transform-origin:0 100%;
+	transform: translateY(-95px) rotate(-4deg);
+}
+
+section.who .who-players-content h3.ro{
+	color: #005ea9;
+}
+
+section.who .who-players-content h3.ed{
+	color: #e51b24;
+}
+
+section.who .who-players-content h3.robogol{
+	color: #f26b14;
+}
+
+section.who .who-players-content h3.d10s{
+	color: #f8b212;
+}
+
+section.who .who-players-content h3.zombinho{
+	color: #f8b212;
+}
+
+section.who .who-players-content h3.tike{
+	color: #055e00;
+}
+
+section.who .who-players-info{
+	display: inline-block;
+	padding: 4em 2em 0em;
+	width: 50%;
+}
+
+section.who .who-players-content p{	
+	box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);	
+	color: white;
+	display: inline-block;	
+	margin: 0px;	
+	padding: 3em 2em 2em;
+	position: relative;	
+	width: 100%;
+
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);	
+}
+
+section.who .who-players-content p:before{
+  content:'';
+  width: 110%;
+  height: 40px;
+  background: #4aa3f4;
+  position:absolute;  
+  top:20%;
+  left:-5px;
+  transform-origin:0 100%;
+  transform: translateY(-100px) rotate(3deg);
+}
+
+section.who .who-players-content p.ro{
+	background-color: #005ea9;
+}
+
+section.who .who-players-image{
+	display: inline-block;	
+	text-align: center;
+	vertical-align: top;
+	width: 48%;
+}
+
+section.who .who-players-image img{
+	display: block;
+	margin: 0px auto;
+	max-width: 450px;
+	width: 100%;
+
+}
+
+.create-futbolito{
+	background: transparent url('../img/img_crea_futbolito.png') no-repeat left bottom;
+	background-size: 100%;
+	bottom: 0%;	
+	display: inline-block;
+	height: 108px;
+	left: 10%;
+	position: absolute;
+	width: 200px;
+}
+
+.clearfix{
+	clear: both;
+}
+
+section.ligue{	
+	background: #c35700; /* Old browsers */
+	color: white;
+	min-height: 400px;	
+
+	background: -moz-radial-gradient(center, ellipse cover,  #c35700 3%, #e6780e 98%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(3%,#c35700), color-stop(98%,#e6780e)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #c35700 3%,#e6780e 98%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #c35700 3%,#e6780e 98%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #c35700 3%,#e6780e 98%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #c35700 3%,#e6780e 98%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c35700', endColorstr='#e6780e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */	
+
+}
+
+section.ligue h2{		
+	color: white;		
+}
+
+
+
+
+
+
+
+
+
