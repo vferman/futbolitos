@@ -1,0 +1,946 @@
+@import "normalize.css";
+@import "foundation.min.css";
+@import "main.css";
+
+@font-face {
+  font-family: 'Bariol';
+  src: url("../fonts/Bariol_Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cartwheel';
+  src: url("../fonts/Cartwheel.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$color-ro: #005ea9;
+$color-ro-2: #4aa3f4;
+
+$color-robogol: #f26b14;
+$color-robogol-2: #00ACA3;
+
+$color-ed: #e51b24;
+$color-ed-2: #AF0B0C;
+
+$color-d10s: #f8b212;
+$color-d10s-2: #0084CB;
+
+$color-zombinho: #731472;
+$color-zombinho-2: #600B58;
+
+$color-tike: #055e00;
+$color-tike-2: #A41E01;
+
+body{
+  background-color: #00376a;
+  font-family: 'Bariol';
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.1);
+  z-index: 5000;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+
+  .modal-window{
+    background: rgba(0,0,0,0.8);
+    position:relative;
+    min-height:500px;
+    min-height:70vh;
+    top: 50px;
+    top: 15vh;
+    
+    div.content{
+      margin:10% 0 0 0;
+        
+      img{
+        margin:0 10%;
+      }
+    }
+    
+    h3{
+      display: inline-block;
+      font-family: 'Cartwheel';
+      font-size: 2rem;
+      margin: 0px auto;
+      padding: 0 1em 0.2em;
+      color:white;
+    }
+    
+    p{
+      font-family: 'Bariol';
+      font-size:1rem;
+      margin: 1em 0;
+      padding: 0 1em;
+      text-align:left;
+      color:white;
+    }
+
+    a.close {
+	  background: #606061;
+	  color: white;
+	  line-height: 25px;
+	  position: absolute;
+	  right: -12px;
+	  text-align: center;
+	  top: -10px;
+	  width: 24px;
+	  text-decoration: none;
+	  font-weight: bold;
+	  border-radius: 12px;
+	  box-shadow: 1px 1px 3px #000;
+    }
+  }    
+}
+
+footer{
+  background-color: $color-ro-2;
+  margin: 0px;
+  padding: 4em;
+  text-align: center;
+
+  h2.title-section{
+    font-size: 4rem;
+    margin: 0px;
+  }
+
+  img{
+    margin: 0px auto;
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+h2{
+  font-size: 3rem
+}
+
+h2.title-section{
+  color: white;
+  font-family: 'Cartwheel';
+  margin: 4rem 0rem;
+}
+
+p{
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+header{
+  background-color: #00376a;
+  background:linear-gradient(to right,#00376a 30%,#336a9d 50%,#00376a 70%);
+  clear: both;
+  width: 100%;
+
+  h1{
+    display: inline-block;
+    padding: 0px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  img{
+    display: block;
+    margin: 0px auto;
+    padding: 0.4em;
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .header-content{
+    position: relative;
+  }
+
+  .login{
+    color: white;
+    display: inline-block;
+    margin: -100px;
+    padding: 0px;
+    right: 18%;
+    position: absolute;
+
+    a{
+      color: white;
+    }
+  }
+
+  .top-nav{
+    background: #4aa3f4;
+    background: linear-gradient(to bottom,  #4aa3f4 3%,#3390e5 98%);
+    font-family: 'Cartwheel';    
+    text-align: center;
+    width: 100%;
+
+
+    ul{
+      margin: 0px;
+      padding: 0px;
+
+      li{
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        width: 16%;
+        margin-left:-3px;
+        margin-right:-3px;
+
+        a{
+          color: white;
+          display: block;
+          padding-top: 0.3em;
+          padding-bottom: 0.3em;
+        }
+
+        a:hover{
+          text-decoration: underline !important;
+        }
+        
+        a.red:hover{
+          background-color:$color-ed;
+        }
+
+        a.orange:hover{
+          background-color:$color-robogol;
+        }
+
+        a.green:hover{
+          background-color:$color-tike;
+        }
+
+        a.purple:hover{
+          background-color:$color-zombinho;
+        }
+
+        a.yellow:hover{
+          background-color:$color-d10s;
+        }
+        
+        a.dblue:hover{
+          background-color:#00376a;
+        }
+
+        a.selected{
+          font-weight: bold;
+        }
+
+        a.selected.red{
+          background-color:$color-ed;
+        }
+
+        a.selected.orange{
+          background-color:$color-robogol;
+        }
+
+        a.selected.green{
+          background-color:$color-tike;
+        }
+
+        a.selected.purple{
+          background-color:$color-zombinho;
+        }
+
+        a.selected.yellow{
+          background-color:$color-d10s;
+        }
+        
+        a.selected.dblue{
+          background-color:#00376a;
+        }
+        
+        a.selected:hover{
+          cursor: default;
+          text-decoration: none !important;
+        }
+      }
+    }
+
+  }
+}
+
+/* HOME */
+section.home{
+  min-height: 400px;
+
+  > div{
+    background: transparent url('../img/img_section_home.png') no-repeat bottom left;
+    background: url('../img/img_section_home.png') no-repeat bottom left, radial-gradient(circle closest-side, #336a9d,#00376a);
+    background-size: 65% auto, cover;
+    min-height: 400px;
+  }
+
+  h2.title-section{
+    margin: 1rem 0rem 1.3rem;
+  }
+
+  .home-content{
+    color: white;
+    padding: 2em;
+  }
+
+  .home-content p{
+    font-size: 16px;
+    padding: 1em;
+  }
+}
+
+section.who{
+  color: white;
+  min-height: 400px;
+
+  > div {
+    transition: background-color 0.5s ease;
+  }
+
+  > div.ro{
+    background-color: $color-ro-2; /* Old browsers */
+    background:linear-gradient(to right, #3992e3, #5bb4f5); 
+
+  }
+
+  > div.ed{
+    background-color: $color-ed-2; /* Old browsers */
+    background:linear-gradient(to top right, #8d0708, #e23e3f);
+
+  }
+
+  > div.robogol{
+    background-color: $color-robogol-2; /* Old browsers */
+    background:linear-gradient(to top right, #00685e, #22cec5);
+  }
+
+  > div.d10s{
+    background-color: $color-d10s-2; /* Old browsers */
+    background:linear-gradient(to top right, #004087, #22a6ed);
+  }
+
+  > div.zombinho{
+    background-color: $color-zombinho-2; /* Old browsers */
+    background:linear-gradient(to top right, #1c0714, #822d7a);
+  }
+
+  > div.tike{
+    background-color: $color-tike-2; /* Old browsers */
+    background:linear-gradient(to top right, #600400, #c64123);
+  }
+
+  h2{
+    color: white;
+  }
+
+  .who-content{
+    padding-bottom: 100px;
+    position: relative;
+  }
+
+  .who-players{
+
+    ul{
+      color: white;
+      clear: both;
+      list-style: none;
+      margin: 0px;
+      padding: 0em 2em;
+      text-align: center;
+
+      li{
+        margin-top: 0px;
+        padding: 0px;
+
+        a{
+          border-radius: 50%;
+          box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+          display: block;
+          height: 100px;
+          margin: 0px auto;
+          overflow: hidden;
+          width: 100px;
+        }
+
+        a.ro{
+          border: 4px solid $color-ro;
+        }
+
+        a.robogol{
+          border: 4px solid $color-robogol;
+        }
+
+        a.ed{
+          border: 4px solid $color-ed;
+        }
+
+        a.d10s{
+          border: 4px solid $color-d10s;
+        }
+
+        a.tike{
+          border: 4px solid $color-tike;
+        }
+
+        a.selected{
+        }
+
+        a.zombinho{
+          border: 4px solid $color-zombinho;
+        }
+
+        span{
+          display: block;
+          font-family: 'Cartwheel';
+          font-size: 1.2rem;
+          margin-top: 0.5rem;
+          text-align: center;
+        }
+      }
+
+      li:hover{
+        animation-name: FadeInOut;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-duration: 1s;
+      }
+    }
+  }
+
+  .who-players-content{
+
+    .who-players-info{
+      display: inline-block;
+      padding: 4em 2em 0em;
+      width: 50%;
+
+      h3{
+        background-color: white;
+        box-shadow: 0px -5px 5px 0px rgba(50, 50, 50, 0.75);
+        bottom: -14px;
+        display: inline-block;
+        font-family: 'Cartwheel';
+        font-size: 2rem;
+        margin: 0px 0px 0px 20px;
+        padding: 0.8em 0.8em 0.2em;
+        position: relative;
+        z-index: 100;
+
+      }
+
+      h3:before{
+        content:'';
+        position:absolute;
+        left:0;
+        top:-10px;
+        width: 100%;
+        height: 30px;
+        background-color:white;
+        -webkit-transform: skewY(-3deg);
+        -moz-transform: skewY(-3deg);
+        -ms-transform: skewY(-3deg);
+        -o-transform: skewY(-3deg);
+        transform: skewY(-3deg);
+        transition: background-color 0.5s ease;
+      }
+
+      h3.ro{
+        color: $color-ro;
+      }
+
+      h3.robogol{
+        color: $color-robogol;
+      }
+
+      h3.ed{
+        color: $color-ed;
+      }
+
+      h3.zombinho{
+        color: $color-zombinho;
+      }
+
+      h3.d10s{
+        color: $color-d10s;
+      }
+
+      h3.tike{
+        color: $color-tike;
+      ;
+      }
+
+      p{
+        box-shadow: 0px -5px 5px 0px rgba(50, 50, 50, 0.75);
+        color: white;
+        display: inline-block;
+        margin: 0px;
+        padding: 3em 2em 2em;
+        position: relative;
+        width: 100%;
+      }
+
+      p:before{
+        content:'';
+        position:absolute;
+        left:0;
+        top:-10px;
+        width: 100%;
+        height: 30px;
+        -webkit-transform: skewY(2.5deg);
+        -moz-transform: skewY(2.5deg);
+        -ms-transform: skewY(2.5deg);
+        -o-transform: skewY(2.5deg);
+        transform: skewY(2.5deg);
+        transition: background-color 0.5s ease;
+      }
+
+      p.ro{
+        background-color: $color-ro;
+      }
+
+      p.ro:before{
+        background-color: $color-ro;
+      }
+
+      p.robogol{
+        background-color: $color-robogol;
+      }
+      
+      p.robogol:before{
+        background-color: $color-robogol;
+      }
+
+      p.ed{
+        background-color: $color-ed;
+      }
+
+      p.ed:before{
+        background-color: $color-ed;
+      }
+
+      p.d10s{
+        background-color: $color-d10s;
+      }
+
+      p.d10s:before{
+        background-color: $color-d10s;
+      }
+
+      p.zombinho{
+        background-color: $color-zombinho;
+      }
+
+      p.zombinho:before{
+        background-color: $color-zombinho;
+      }
+
+      p.tike{
+        background-color: $color-tike;
+      }
+
+      p.tike:before{
+        background-color: $color-tike;
+      }
+    }
+
+    .who-players-image{
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+      width: 48%;
+
+      img{
+        display: block;
+        margin: 0px auto;
+        max-width: 450px;
+        width: 100%;
+
+      }
+    }
+  }
+
+  .create-futbolito{
+    background: transparent url('../img/img_crea_futbolito.png') no-repeat left bottom;
+    background-size: 100%;
+    bottom: 0%;
+    cursor: pointer;
+    display: inline-block;
+    height: 108px;
+    left: 10%;
+    position: absolute;
+    width: 200px;
+  }
+}
+
+section.ligue{
+  background-color:#c35700;
+  background: radial-gradient(ellipse at center,  #c35700 3%,#e6780e 98%); /* W3C */
+  color: white;
+  min-height: 400px;
+
+  h2{
+    color: white;
+  }
+
+  img{
+    display: block;
+    margin: 1em auto;
+    width: 70%;
+  }
+
+  p{
+    background-color: #c35700;
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    padding: 2em;
+    margin: 0em 0em 2em;
+  }
+}
+
+section.stadiums{
+  background-color: $color-ro-2;
+}
+
+section.teams{
+  background-color: #00376a;
+
+  .teams-content{
+    ul{
+      font-size: 0px;
+      list-style: none;
+      margin: 0em 0em 5rem;
+      padding: 0px;
+      text-align: center;
+
+      li{
+        font-size: 1rem;
+        display: inline-block;
+        vertical-align: top;
+
+        a{
+          display: inline-block;
+          padding: 2em 1em 1em;
+          text-decoration: none;
+          width: 100%;
+
+          img{
+            height: 200px;
+            width: auto;
+          }
+
+          span{
+            color: white;
+            display: block;
+            font-family: "Cartwheel";
+            font-size: 20px;
+            margin-top: 0.8rem;
+          }
+        }
+
+        a:hover{
+          animation-name: FadeInOut;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: 1;
+          animation-duration: 1s;
+          span{
+            text-decoration: underline;
+          }
+        }
+      }
+
+      li.ro{
+        background-color: $color-ro-2;
+      }
+      li.ed{
+        background-color: $color-ed-2;
+      }
+      li.robogol{
+        background-color: $color-robogol;
+      }
+      li.d10s{
+        background-color: $color-d10s;
+      }
+      li.zombinho{
+        background-color: $color-zombinho;
+      }
+      li.tike{
+        background-color: $color-tike;
+      }
+    }
+  }
+}
+
+/* DOWNLOADS */
+section.downloads{
+  .downloads-content{
+    padding: 3em;
+
+    .wallpaper-item{
+      text-align: center;
+
+      a{
+        span{
+          color: white;
+          display: block;
+          margin: 1em 0em 3em;
+        }
+      }
+
+      a:hover{
+        color: white;
+        text-decoration: underline;
+
+        span{
+          display: block;
+          margin: 1em 0em 3em;
+        }
+      }
+    }
+
+  }
+}
+
+/* STORE */
+section.store{
+  min-height: 400px;
+
+  iframe{
+    height:1300px;
+    width:100%;
+  }
+}
+
+/* LICENSE */
+section.license{
+  background:linear-gradient(to right,#00376a 30%,#336a9d 50%,#00376a 70%);
+
+  .license-content{
+    padding: 3em;
+
+    .license-info{
+      margin-bottom: 6em;
+      position: relative;
+
+      .image{
+        display: inline-block;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width: 200px;
+
+        img{
+          width: 100%;
+        }
+      }
+
+      h3{
+        box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+        bottom: -14px;
+        display: inline-block;
+        font-family: 'Cartwheel';
+        font-size: 2rem;
+        margin: 0px 0px 0px 20px;
+        padding: 0.8em 0.8em 0.2em;
+        position: relative;
+        z-index: 100;
+
+      }
+
+      h3:before{
+        content:'';
+        position:absolute;
+        left:0;
+        top:-7px;
+        width: 100%;
+        height: 30px;
+        -webkit-transform: skewY(-2.5deg);
+        -moz-transform: skewY(-2.5deg);
+        -ms-transform: skewY(-2.5deg);
+        -o-transform: skewY(-2.5deg);
+        transform: skewY(-2.5deg);
+        transition: background-color 0.5s ease;
+      }
+
+      h3.orange{
+        background-color: $color-robogol;
+        color: white;
+      }
+
+      h3.orange:before{
+        background-color: $color-robogol;
+      }
+
+      h3.yellow{
+        background-color: $color-d10s;
+        color: white;
+      }
+
+      h3.yellow:before{
+        background-color: $color-d10s;
+        color: white;
+      }
+
+      p{
+        box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+        color: white;
+        display: inline-block;
+        margin: 0px;
+        padding: 3em 2em 2em;
+        position: relative;
+        width: 100%;
+
+        a{
+          color: white;
+          text-decoration: underline;
+        }
+
+        strong{
+          font-size: 1.1em;
+        }
+      }
+      p:before{
+        content:'';
+        position:absolute;
+        left:0;
+        top:-12px;
+        width: 100%;
+        height: 30px;
+        -webkit-transform: skewY(1.5deg);
+        -moz-transform: skewY(1.5deg);
+        -ms-transform: skewY(1.5deg);
+        -o-transform: skewY(1.5deg);
+        transform: skewY(1.5deg);
+        transition: background-color 0.5s ease;
+      }
+
+      p.orange{
+        background-color: $color-robogol;
+      }
+
+      p.orange:before{
+        background-color: $color-robogol;
+      }
+
+      p.blue{
+        background-color: $color-ro-2;
+      }
+
+      p.blue:before{
+        background-color: $color-ro-2;
+      }
+    }
+
+  }
+}
+
+
+/* CONTACT */
+section.contact{
+  .contact-content{
+    padding: 3em;
+
+    .contact-info{
+      margin-bottom: 6em;
+      position: relative;
+
+      .image{
+        display: inline-block;
+        position: absolute;
+        top: -80px;
+        right: 50px;
+        width: 200px;
+
+        img{
+          width: 100%;
+        }
+      }
+
+      h3{
+        box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+        bottom: -14px;
+        display: inline-block;
+        font-family: 'Cartwheel';
+        font-size: 2rem;
+        margin: 0px 0px 0px 20px;
+        padding: 0.8em 0.8em 0.2em;
+        position: relative;
+        z-index: 100;
+
+      }
+
+      h3:after{
+        background-color: #00376a;
+        content:'';
+        width: 110%;
+        height: 40px;
+        position:absolute;
+        bottom:0%;
+        left:-5px;
+        top: 100%;
+        transform-origin:0 100%;
+        transform: translateY(-95px) rotate(-4deg);
+        transition: background-color 0.5s ease;
+      }
+
+      h3.orange{
+        background-color: $color-robogol;
+        color: white;
+      }
+
+      h3.yellow{
+        background-color: $color-d10s;
+        color: white;
+      }
+
+      h3.yellow{
+        background-color: $color-d10s;
+        color: white;
+      }
+
+      p{
+        box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+        color: white;
+        display: inline-block;
+        font-size: 3em;
+        line-height: 40px;
+        margin: 0px;
+        padding: 2em 2em;
+        position: relative;
+        text-align: center;
+        width: 100%;
+
+        a{
+          color: white;
+          text-decoration: underline;
+        }
+
+        strong{
+          font-size: 1.1em;
+        }
+      }
+
+      p.orange{
+        background-color: $color-robogol;
+      }
+
+      p.blue{
+        background-color: $color-ro-2;
+      }
+
+    }
+
+  }
+}
+
+
+.clearfix{
+  clear: both;
+}
+
+@keyframes FadeInOut {
+  50% {
+    transform: scale(1.1);
+  }
+}
