@@ -13,13 +13,13 @@
   font-weight: normal;
   font-style: normal;
 }
-/* line 37, futbolitos.scss */
+/* line 43, futbolitos.scss */
 body {
   background-color: #00376a;
   font-family: 'Bariol';
 }
 
-/* line 42, futbolitos.scss */
+/* line 48, futbolitos.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -32,24 +32,62 @@ body {
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
 }
-/* line 54, futbolitos.scss */
+/* line 60, futbolitos.scss */
 .overlay .modal-window {
   background: rgba(0, 0, 0, 0.8);
   position: relative;
-  min-height: 500px;
-  min-height: 70vh;
+  height: 500px;
+  height: 70vh;
   top: 50px;
   top: 15vh;
 }
-/* line 62, futbolitos.scss */
-.overlay .modal-window div.content {
-  margin: 10% 0 0 0;
+/* line 69, futbolitos.scss */
+.overlay .modal-window div {
+  height: 500px;
+  height: 70vh;
 }
-/* line 65, futbolitos.scss */
-.overlay .modal-window div.content img {
-  margin: 0 10%;
+/* line 72, futbolitos.scss */
+.overlay .modal-window div .content {
+  padding: 2rem 0 0 0;
+  overflow-y: auto;
 }
-/* line 70, futbolitos.scss */
+/* line 76, futbolitos.scss */
+.overlay .modal-window div .atletico {
+  background: transparent url("../img/img_team_atletico.png") no-repeat center;
+}
+/* line 80, futbolitos.scss */
+.overlay .modal-window div .deportivo {
+  background: transparent url("../img/img_team_deportivo.png") no-repeat center;
+}
+/* line 84, futbolitos.scss */
+.overlay .modal-window div .deportivo {
+  background: transparent url("../img/img_team_deportivo.png") no-repeat center;
+}
+/* line 88, futbolitos.scss */
+.overlay .modal-window div .robot {
+  background: transparent url("../img/img_team_robot.png") no-repeat center;
+}
+/* line 92, futbolitos.scss */
+.overlay .modal-window div .olympo {
+  background: transparent url("../img/img_team_olympo.png") no-repeat center;
+}
+/* line 96, futbolitos.scss */
+.overlay .modal-window div .zombie {
+  background: transparent url("../img/img_team_united.png") no-repeat center;
+}
+/* line 100, futbolitos.scss */
+.overlay .modal-window div .sporting {
+  background: transparent url("../img/img_team_sporting.png") no-repeat center;
+}
+/* line 104, futbolitos.scss */
+.overlay .modal-window div .mad {
+  background: transparent url("../img/img_team_mad.png") no-repeat center;
+}
+/* line 108, futbolitos.scss */
+.overlay .modal-window div .estrellas {
+  background: transparent url("../img/img_team_estrellas.png") no-repeat center;
+}
+/* line 112, futbolitos.scss */
 .overlay .modal-window h3 {
   display: inline-block;
   font-family: 'Cartwheel';
@@ -58,7 +96,7 @@ body {
   padding: 0 1em 0.2em;
   color: white;
 }
-/* line 79, futbolitos.scss */
+/* line 121, futbolitos.scss */
 .overlay .modal-window p {
   font-family: 'Bariol';
   font-size: 1rem;
@@ -67,74 +105,88 @@ body {
   text-align: left;
   color: white;
 }
-/* line 88, futbolitos.scss */
+/* line 130, futbolitos.scss */
 .overlay .modal-window a.close {
   background: #606061;
   color: white;
-  line-height: 25px;
+  line-height: 24px;
   position: absolute;
-  right: -12px;
+  right: 0px;
   text-align: center;
-  top: -10px;
+  top: 0px;
   width: 24px;
   text-decoration: none;
   font-weight: bold;
   border-radius: 12px;
   box-shadow: 1px 1px 3px #000;
+  z-index: 5100;
 }
 
-/* line 105, futbolitos.scss */
+/* line 149, futbolitos.scss */
 footer {
   background-color: #4aa3f4;
   margin: 0px;
-  padding: 4em;
+  padding: 2em;
   text-align: center;
+  width: 100%;
 }
-/* line 111, futbolitos.scss */
+/* line 156, futbolitos.scss */
 footer h2.title-section {
   font-size: 4rem;
   margin: 0px;
 }
-/* line 116, futbolitos.scss */
+/* line 161, futbolitos.scss */
 footer img {
   margin: 0px auto;
   max-width: 400px;
   width: 100%;
 }
-
-/* line 123, futbolitos.scss */
-h2 {
-  font-size: 3rem;
+/* line 166, futbolitos.scss */
+footer div.social-media {
+  margin: 0 auto 3em;
+}
+/* line 169, futbolitos.scss */
+footer div.social-media img {
+  width: auto;
+}
+/* line 172, futbolitos.scss */
+footer div.social-media a {
+  text-decoration: none;
 }
 
-/* line 127, futbolitos.scss */
+/* line 179, futbolitos.scss */
+h2 {
+  font-size: 2.5rem;
+}
+
+/* line 183, futbolitos.scss */
 h2.title-section {
   color: white;
   font-family: 'Cartwheel';
-  margin: 4rem 0rem;
+  margin: 3rem 0rem;
 }
 
-/* line 133, futbolitos.scss */
+/* line 189, futbolitos.scss */
 p {
   font-size: 1.1rem;
   line-height: 1.4rem;
 }
 
-/* line 138, futbolitos.scss */
+/* line 194, futbolitos.scss */
 header {
   background-color: #00376a;
   background: linear-gradient(to right, #00376a 30%, #336a9d 50%, #00376a 70%);
   clear: both;
   width: 100%;
 }
-/* line 144, futbolitos.scss */
+/* line 200, futbolitos.scss */
 header h1 {
   display: inline-block;
   padding: 0px;
   vertical-align: middle;
   width: 100%;
 }
-/* line 151, futbolitos.scss */
+/* line 207, futbolitos.scss */
 header img {
   display: block;
   margin: 0px auto;
@@ -142,11 +194,11 @@ header img {
   max-width: 350px;
   width: 100%;
 }
-/* line 159, futbolitos.scss */
+/* line 215, futbolitos.scss */
 header .header-content {
   position: relative;
 }
-/* line 163, futbolitos.scss */
+/* line 219, futbolitos.scss */
 header .login {
   color: white;
   display: inline-block;
@@ -155,11 +207,11 @@ header .login {
   right: 18%;
   position: absolute;
 }
-/* line 171, futbolitos.scss */
+/* line 227, futbolitos.scss */
 header .login a {
   color: white;
 }
-/* line 176, futbolitos.scss */
+/* line 232, futbolitos.scss */
 header .top-nav {
   background: #4aa3f4;
   background: linear-gradient(to bottom, #4aa3f4 3%, #3390e5 98%);
@@ -167,171 +219,200 @@ header .top-nav {
   text-align: center;
   width: 100%;
 }
-/* line 184, futbolitos.scss */
+/* line 240, futbolitos.scss */
 header .top-nav ul {
   margin: 0px;
   padding: 0px;
+  display: -webkit-flex;
+  display: flex;
+  align-items: strech;
 }
-/* line 188, futbolitos.scss */
+/* line 247, futbolitos.scss */
 header .top-nav ul li {
-  display: inline-block;
   text-align: center;
-  vertical-align: top;
-  width: 16%;
-  margin-left: -3px;
-  margin-right: -3px;
+  vertical-align: middle;
+  width: 14%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: strech;
+  align-items: strech;
 }
-/* line 196, futbolitos.scss */
+/* line 256, futbolitos.scss */
 header .top-nav ul li a {
   color: white;
-  display: block;
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
+  display: flex;
+  padding: 0.3em 0.5em;
+  height: 100%;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-/* line 203, futbolitos.scss */
+/* line 269, futbolitos.scss */
 header .top-nav ul li a:hover {
   text-decoration: underline !important;
 }
-/* line 207, futbolitos.scss */
+/* line 273, futbolitos.scss */
 header .top-nav ul li a.red:hover {
   background-color: #e51b24;
 }
-/* line 211, futbolitos.scss */
+/* line 277, futbolitos.scss */
 header .top-nav ul li a.orange:hover {
   background-color: #f26b14;
 }
-/* line 215, futbolitos.scss */
+/* line 281, futbolitos.scss */
 header .top-nav ul li a.green:hover {
   background-color: #055e00;
 }
-/* line 219, futbolitos.scss */
+/* line 285, futbolitos.scss */
 header .top-nav ul li a.purple:hover {
   background-color: #731472;
 }
-/* line 223, futbolitos.scss */
+/* line 289, futbolitos.scss */
 header .top-nav ul li a.yellow:hover {
   background-color: #f8b212;
 }
-/* line 227, futbolitos.scss */
+/* line 293, futbolitos.scss */
+header .top-nav ul li a.aqua:hover {
+  background-color: #00aca3;
+}
+/* line 297, futbolitos.scss */
 header .top-nav ul li a.dblue:hover {
   background-color: #00376a;
 }
-/* line 231, futbolitos.scss */
-header .top-nav ul li a.selected {
-  font-weight: bold;
-}
-/* line 235, futbolitos.scss */
+/* line 301, futbolitos.scss */
 header .top-nav ul li a.selected.red {
   background-color: #e51b24;
 }
-/* line 239, futbolitos.scss */
+/* line 305, futbolitos.scss */
 header .top-nav ul li a.selected.orange {
   background-color: #f26b14;
 }
-/* line 243, futbolitos.scss */
+/* line 309, futbolitos.scss */
 header .top-nav ul li a.selected.green {
   background-color: #055e00;
 }
-/* line 247, futbolitos.scss */
+/* line 313, futbolitos.scss */
 header .top-nav ul li a.selected.purple {
   background-color: #731472;
 }
-/* line 251, futbolitos.scss */
+/* line 317, futbolitos.scss */
 header .top-nav ul li a.selected.yellow {
   background-color: #f8b212;
 }
-/* line 255, futbolitos.scss */
+/* line 321, futbolitos.scss */
+header .top-nav ul li a.selected.aqua {
+  background-color: #00aca3;
+}
+/* line 325, futbolitos.scss */
 header .top-nav ul li a.selected.dblue {
   background-color: #00376a;
 }
-/* line 259, futbolitos.scss */
+/* line 329, futbolitos.scss */
 header .top-nav ul li a.selected:hover {
   cursor: default;
   text-decoration: none !important;
 }
 
 /* HOME */
-/* line 270, futbolitos.scss */
+/* line 341, futbolitos.scss */
 section.home {
   min-height: 400px;
 }
-/* line 273, futbolitos.scss */
+/* line 344, futbolitos.scss */
 section.home > div {
-  background: transparent url("../img/img_section_home.png") no-repeat bottom left;
-  background: url("../img/img_section_home.png") no-repeat bottom left, radial-gradient(circle closest-side, #336a9d, #00376a);
+  background: transparent url("../img/img_section_home.png") no-repeat center left;
+  background: url("../img/img_section_home.png") no-repeat center left, linear-gradient(to right, #00376a 30%, #336a9d 50%, #00376a 70%);
   background-size: 65% auto, cover;
   min-height: 400px;
 }
-/* line 280, futbolitos.scss */
+/* line 351, futbolitos.scss */
 section.home h2.title-section {
-  margin: 1rem 0rem 1.3rem;
+  margin: 0 0 1.3rem 0;
 }
-/* line 284, futbolitos.scss */
+/* line 355, futbolitos.scss */
 section.home .home-content {
   color: white;
   padding: 2em;
 }
-/* line 289, futbolitos.scss */
+/* line 360, futbolitos.scss */
 section.home .home-content p {
-  font-size: 16px;
-  padding: 1em;
+  font-size: 1rem;
+  margin: 0 0 1em 0;
 }
 
-/* line 295, futbolitos.scss */
+/* line 366, futbolitos.scss */
 section.who {
   color: white;
   min-height: 400px;
+  overflow: hidden;
 }
-/* line 299, futbolitos.scss */
+/* line 371, futbolitos.scss */
 section.who > div {
   transition: background-color 0.5s ease;
 }
-/* line 303, futbolitos.scss */
+/* line 375, futbolitos.scss */
 section.who > div.ro {
   background-color: #4aa3f4;
   /* Old browsers */
   background: linear-gradient(to right, #3992e3, #5bb4f5);
 }
-/* line 309, futbolitos.scss */
+/* line 381, futbolitos.scss */
 section.who > div.ed {
-  background-color: #AF0B0C;
+  background-color: #af0b0c;
   /* Old browsers */
   background: linear-gradient(to top right, #8d0708, #e23e3f);
 }
-/* line 315, futbolitos.scss */
+/* line 387, futbolitos.scss */
 section.who > div.robogol {
-  background-color: #00ACA3;
+  background-color: #00aca3;
   /* Old browsers */
   background: linear-gradient(to top right, #00685e, #22cec5);
 }
-/* line 320, futbolitos.scss */
+/* line 392, futbolitos.scss */
 section.who > div.d10s {
-  background-color: #0084CB;
+  background-color: #0084cb;
   /* Old browsers */
   background: linear-gradient(to top right, #004087, #22a6ed);
 }
-/* line 325, futbolitos.scss */
+/* line 397, futbolitos.scss */
 section.who > div.zombinho {
-  background-color: #600B58;
+  background-color: #600b58;
   /* Old browsers */
   background: linear-gradient(to top right, #1c0714, #822d7a);
 }
-/* line 330, futbolitos.scss */
+/* line 402, futbolitos.scss */
 section.who > div.tike {
-  background-color: #A41E01;
+  background-color: #a41e01;
   /* Old browsers */
   background: linear-gradient(to top right, #600400, #c64123);
 }
-/* line 335, futbolitos.scss */
+/* line 407, futbolitos.scss */
+section.who > div.mia {
+  background-color: #d52f6b;
+  background: linear-gradient(to top right, #910c27, #f7528d);
+}
+/* line 412, futbolitos.scss */
+section.who > div.zuri {
+  background-color: #81d9ea;
+  background: linear-gradient(to top right, #81d9ea, #a5f3fa);
+}
+/* line 417, futbolitos.scss */
 section.who h2 {
   color: white;
 }
-/* line 339, futbolitos.scss */
+/* line 421, futbolitos.scss */
 section.who .who-content {
   padding-bottom: 100px;
   position: relative;
 }
-/* line 346, futbolitos.scss */
+/* line 428, futbolitos.scss */
+section.who .who-players h2 {
+  margin: 3rem 0 1rem;
+}
+/* line 432, futbolitos.scss */
 section.who .who-players ul {
   color: white;
   clear: both;
@@ -340,12 +421,13 @@ section.who .who-players ul {
   padding: 0em 2em;
   text-align: center;
 }
-/* line 354, futbolitos.scss */
+/* line 440, futbolitos.scss */
 section.who .who-players ul li {
   margin-top: 0px;
   padding: 0px;
+  min-width: 12%;
 }
-/* line 358, futbolitos.scss */
+/* line 444, futbolitos.scss */
 section.who .who-players ul li a {
   border-radius: 50%;
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
@@ -355,31 +437,39 @@ section.who .who-players ul li a {
   overflow: hidden;
   width: 100px;
 }
-/* line 368, futbolitos.scss */
+/* line 454, futbolitos.scss */
 section.who .who-players ul li a.ro {
   border: 4px solid #005ea9;
 }
-/* line 372, futbolitos.scss */
+/* line 458, futbolitos.scss */
 section.who .who-players ul li a.robogol {
   border: 4px solid #f26b14;
 }
-/* line 376, futbolitos.scss */
+/* line 462, futbolitos.scss */
 section.who .who-players ul li a.ed {
   border: 4px solid #e51b24;
 }
-/* line 380, futbolitos.scss */
+/* line 466, futbolitos.scss */
 section.who .who-players ul li a.d10s {
   border: 4px solid #f8b212;
 }
-/* line 384, futbolitos.scss */
+/* line 470, futbolitos.scss */
 section.who .who-players ul li a.tike {
   border: 4px solid #055e00;
 }
-/* line 391, futbolitos.scss */
+/* line 477, futbolitos.scss */
 section.who .who-players ul li a.zombinho {
   border: 4px solid #731472;
 }
-/* line 395, futbolitos.scss */
+/* line 481, futbolitos.scss */
+section.who .who-players ul li a.mia {
+  border: 4px solid #d52f6b;
+}
+/* line 485, futbolitos.scss */
+section.who .who-players ul li a.zuri {
+  border: 4px solid #ffeebc;
+}
+/* line 489, futbolitos.scss */
 section.who .who-players ul li span {
   display: block;
   font-family: 'Cartwheel';
@@ -387,20 +477,20 @@ section.who .who-players ul li span {
   margin-top: 0.5rem;
   text-align: center;
 }
-/* line 404, futbolitos.scss */
+/* line 498, futbolitos.scss */
 section.who .who-players ul li:hover {
   animation-name: FadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
   animation-duration: 1s;
 }
-/* line 415, futbolitos.scss */
+/* line 509, futbolitos.scss */
 section.who .who-players-content .who-players-info {
   display: inline-block;
   padding: 4em 2em 0em;
   width: 50%;
 }
-/* line 420, futbolitos.scss */
+/* line 514, futbolitos.scss */
 section.who .who-players-content .who-players-info h3 {
   background-color: white;
   box-shadow: 0px -5px 5px 0px rgba(50, 50, 50, 0.75);
@@ -409,11 +499,11 @@ section.who .who-players-content .who-players-info h3 {
   font-family: 'Cartwheel';
   font-size: 2rem;
   margin: 0px 0px 0px 20px;
-  padding: 0.8em 0.8em 0.2em;
+  padding: 0.4em 0.8em 0.2em;
   position: relative;
-  z-index: 100;
+  z-index: 99;
 }
-/* line 434, futbolitos.scss */
+/* line 528, futbolitos.scss */
 section.who .who-players-content .who-players-info h3:before {
   content: '';
   position: absolute;
@@ -427,43 +517,51 @@ section.who .who-players-content .who-players-info h3:before {
   -ms-transform: skewY(-3deg);
   -o-transform: skewY(-3deg);
   transform: skewY(-3deg);
-  transition: background-color 0.5s ease;
 }
-/* line 450, futbolitos.scss */
+/* line 543, futbolitos.scss */
 section.who .who-players-content .who-players-info h3.ro {
   color: #005ea9;
 }
-/* line 454, futbolitos.scss */
+/* line 547, futbolitos.scss */
 section.who .who-players-content .who-players-info h3.robogol {
   color: #f26b14;
 }
-/* line 458, futbolitos.scss */
+/* line 551, futbolitos.scss */
 section.who .who-players-content .who-players-info h3.ed {
   color: #e51b24;
 }
-/* line 462, futbolitos.scss */
+/* line 555, futbolitos.scss */
 section.who .who-players-content .who-players-info h3.zombinho {
   color: #731472;
 }
-/* line 466, futbolitos.scss */
+/* line 559, futbolitos.scss */
 section.who .who-players-content .who-players-info h3.d10s {
   color: #f8b212;
 }
-/* line 470, futbolitos.scss */
+/* line 563, futbolitos.scss */
 section.who .who-players-content .who-players-info h3.tike {
   color: #055e00;
 }
-/* line 475, futbolitos.scss */
+/* line 567, futbolitos.scss */
+section.who .who-players-content .who-players-info h3.mia {
+  color: #d52f6b;
+}
+/* line 571, futbolitos.scss */
+section.who .who-players-content .who-players-info h3.zuri {
+  color: #d52f6b;
+}
+/* line 575, futbolitos.scss */
 section.who .who-players-content .who-players-info p {
   box-shadow: 0px -5px 5px 0px rgba(50, 50, 50, 0.75);
   color: white;
   display: inline-block;
-  margin: 0px;
-  padding: 3em 2em 2em;
+  margin: 20px 0px 0px;
+  padding: 1em 2em 2em;
   position: relative;
   width: 100%;
+  z-index: 100;
 }
-/* line 485, futbolitos.scss */
+/* line 586, futbolitos.scss */
 section.who .who-players-content .who-players-info p:before {
   content: '';
   position: absolute;
@@ -471,76 +569,95 @@ section.who .who-players-content .who-players-info p:before {
   top: -10px;
   width: 100%;
   height: 30px;
-  -webkit-transform: skewY(2.5deg);
-  -moz-transform: skewY(2.5deg);
-  -ms-transform: skewY(2.5deg);
-  -o-transform: skewY(2.5deg);
-  transform: skewY(2.5deg);
-  transition: background-color 0.5s ease;
+  -webkit-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  transform: skewY(2deg);
+  z-index: 100;
 }
-/* line 500, futbolitos.scss */
+/* line 601, futbolitos.scss */
 section.who .who-players-content .who-players-info p.ro {
   background-color: #005ea9;
 }
-/* line 504, futbolitos.scss */
+/* line 605, futbolitos.scss */
 section.who .who-players-content .who-players-info p.ro:before {
   background-color: #005ea9;
 }
-/* line 508, futbolitos.scss */
+/* line 609, futbolitos.scss */
 section.who .who-players-content .who-players-info p.robogol {
   background-color: #f26b14;
 }
-/* line 512, futbolitos.scss */
+/* line 613, futbolitos.scss */
 section.who .who-players-content .who-players-info p.robogol:before {
   background-color: #f26b14;
 }
-/* line 516, futbolitos.scss */
+/* line 617, futbolitos.scss */
 section.who .who-players-content .who-players-info p.ed {
   background-color: #e51b24;
 }
-/* line 520, futbolitos.scss */
+/* line 621, futbolitos.scss */
 section.who .who-players-content .who-players-info p.ed:before {
   background-color: #e51b24;
 }
-/* line 524, futbolitos.scss */
+/* line 625, futbolitos.scss */
 section.who .who-players-content .who-players-info p.d10s {
   background-color: #f8b212;
 }
-/* line 528, futbolitos.scss */
+/* line 629, futbolitos.scss */
 section.who .who-players-content .who-players-info p.d10s:before {
   background-color: #f8b212;
 }
-/* line 532, futbolitos.scss */
+/* line 633, futbolitos.scss */
 section.who .who-players-content .who-players-info p.zombinho {
   background-color: #731472;
 }
-/* line 536, futbolitos.scss */
+/* line 637, futbolitos.scss */
 section.who .who-players-content .who-players-info p.zombinho:before {
   background-color: #731472;
 }
-/* line 540, futbolitos.scss */
+/* line 641, futbolitos.scss */
 section.who .who-players-content .who-players-info p.tike {
   background-color: #055e00;
 }
-/* line 544, futbolitos.scss */
+/* line 645, futbolitos.scss */
 section.who .who-players-content .who-players-info p.tike:before {
   background-color: #055e00;
 }
-/* line 549, futbolitos.scss */
+/* line 649, futbolitos.scss */
+section.who .who-players-content .who-players-info p.mia {
+  background-color: #2c2c2c;
+}
+/* line 653, futbolitos.scss */
+section.who .who-players-content .who-players-info p.mia:before {
+  background-color: #2c2c2c;
+}
+/* line 657, futbolitos.scss */
+section.who .who-players-content .who-players-info p.zuri {
+  background-color: #f7aabd;
+}
+/* line 661, futbolitos.scss */
+section.who .who-players-content .who-players-info p.zuri:before {
+  background-color: #f7aabd;
+}
+/* line 666, futbolitos.scss */
 section.who .who-players-content .who-players-image {
   display: inline-block;
   text-align: center;
   vertical-align: top;
   width: 48%;
+  max-height: 500px;
+  overflow: visible;
+  z-index: 110;
 }
-/* line 555, futbolitos.scss */
+/* line 675, futbolitos.scss */
 section.who .who-players-content .who-players-image img {
   display: block;
   margin: 0px auto;
   max-width: 450px;
   width: 100%;
 }
-/* line 565, futbolitos.scss */
+/* line 685, futbolitos.scss */
 section.who .create-futbolito {
   background: transparent url("../img/img_crea_futbolito.png") no-repeat left bottom;
   background-size: 100%;
@@ -553,25 +670,26 @@ section.who .create-futbolito {
   width: 200px;
 }
 
-/* line 578, futbolitos.scss */
+/* line 698, futbolitos.scss */
 section.ligue {
   background-color: #c35700;
   background: radial-gradient(ellipse at center, #c35700 3%, #e6780e 98%);
   /* W3C */
   color: white;
   min-height: 400px;
+  z-index: 200;
 }
-/* line 584, futbolitos.scss */
+/* line 705, futbolitos.scss */
 section.ligue h2 {
   color: white;
 }
-/* line 588, futbolitos.scss */
+/* line 709, futbolitos.scss */
 section.ligue img {
   display: block;
   margin: 1em auto;
   width: 70%;
 }
-/* line 594, futbolitos.scss */
+/* line 715, futbolitos.scss */
 section.ligue p {
   background-color: #c35700;
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
@@ -579,16 +697,11 @@ section.ligue p {
   margin: 0em 0em 2em;
 }
 
-/* line 602, futbolitos.scss */
-section.stadiums {
-  background-color: #4aa3f4;
-}
-
-/* line 606, futbolitos.scss */
+/* line 723, futbolitos.scss */
 section.teams {
   background-color: #00376a;
 }
-/* line 610, futbolitos.scss */
+/* line 727, futbolitos.scss */
 section.teams .teams-content ul {
   font-size: 0px;
   list-style: none;
@@ -596,25 +709,24 @@ section.teams .teams-content ul {
   padding: 0px;
   text-align: center;
 }
-/* line 617, futbolitos.scss */
+/* line 734, futbolitos.scss */
 section.teams .teams-content ul li {
   font-size: 1rem;
   display: inline-block;
   vertical-align: top;
 }
-/* line 622, futbolitos.scss */
+/* line 739, futbolitos.scss */
 section.teams .teams-content ul li a {
   display: inline-block;
   padding: 2em 1em 1em;
   text-decoration: none;
   width: 100%;
 }
-/* line 628, futbolitos.scss */
+/* line 745, futbolitos.scss */
 section.teams .teams-content ul li a img {
-  height: 200px;
-  width: auto;
+  width: 200px;
 }
-/* line 633, futbolitos.scss */
+/* line 749, futbolitos.scss */
 section.teams .teams-content ul li a span {
   color: white;
   display: block;
@@ -622,94 +734,197 @@ section.teams .teams-content ul li a span {
   font-size: 20px;
   margin-top: 0.8rem;
 }
-/* line 642, futbolitos.scss */
+/* line 758, futbolitos.scss */
 section.teams .teams-content ul li a:hover {
   animation-name: FadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
   animation-duration: 1s;
 }
-/* line 647, futbolitos.scss */
+/* line 763, futbolitos.scss */
 section.teams .teams-content ul li a:hover span {
   text-decoration: underline;
 }
-/* line 653, futbolitos.scss */
+/* line 769, futbolitos.scss */
 section.teams .teams-content ul li.ro {
   background-color: #4aa3f4;
 }
-/* line 656, futbolitos.scss */
+/* line 772, futbolitos.scss */
 section.teams .teams-content ul li.ed {
-  background-color: #AF0B0C;
+  background-color: #af0b0c;
 }
-/* line 659, futbolitos.scss */
+/* line 775, futbolitos.scss */
 section.teams .teams-content ul li.robogol {
   background-color: #f26b14;
 }
-/* line 662, futbolitos.scss */
+/* line 778, futbolitos.scss */
 section.teams .teams-content ul li.d10s {
   background-color: #f8b212;
 }
-/* line 665, futbolitos.scss */
+/* line 781, futbolitos.scss */
 section.teams .teams-content ul li.zombinho {
   background-color: #731472;
 }
-/* line 668, futbolitos.scss */
+/* line 784, futbolitos.scss */
 section.teams .teams-content ul li.tike {
+  background-color: #055e00;
+}
+/* line 787, futbolitos.scss */
+section.teams .teams-content ul li.mia {
+  background-color: #d52f6b;
+}
+/* line 790, futbolitos.scss */
+section.teams .teams-content ul li.zuri {
+  background-color: #ffeebc;
+}
+
+/* line 797, futbolitos.scss */
+section.stadiums {
+  background: #4aa3f4 url("../img/img_coliseo.png") no-repeat left bottom;
+  background-size: 70%;
+  min-height: 550px;
+}
+/* line 802, futbolitos.scss */
+section.stadiums h2 {
+  background: #f26b14;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  margin: 2rem -1rem 0;
+}
+/* line 809, futbolitos.scss */
+section.stadiums div.teams {
+  margin-top: -3rem;
+}
+/* line 813, futbolitos.scss */
+section.stadiums ul {
+  font-size: 0px;
+  list-style: none;
+  margin: 0em 0em 5rem;
+  padding: 0;
+  text-align: center;
+}
+/* line 820, futbolitos.scss */
+section.stadiums ul li {
+  font-size: 1rem;
+  display: block;
+  vertical-align: top;
+}
+/* line 825, futbolitos.scss */
+section.stadiums ul li a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  padding: 0.5em 0;
+}
+/* line 831, futbolitos.scss */
+section.stadiums ul li a img {
+  height: 100px;
+  width: auto;
+}
+/* line 837, futbolitos.scss */
+section.stadiums ul li a:hover {
+  animation-name: FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
+/* line 845, futbolitos.scss */
+section.stadiums ul li.ro {
+  background-color: #4aa3f4;
+}
+/* line 848, futbolitos.scss */
+section.stadiums ul li.ed {
+  background-color: #af0b0c;
+}
+/* line 851, futbolitos.scss */
+section.stadiums ul li.robogol {
+  background-color: #f26b14;
+}
+/* line 854, futbolitos.scss */
+section.stadiums ul li.d10s {
+  background-color: #f8b212;
+}
+/* line 857, futbolitos.scss */
+section.stadiums ul li.zombinho {
+  background-color: #731472;
+}
+/* line 860, futbolitos.scss */
+section.stadiums ul li.tike {
   background-color: #055e00;
 }
 
 /* DOWNLOADS */
-/* line 677, futbolitos.scss */
-section.downloads .downloads-content {
-  padding: 3em;
+/* line 867, futbolitos.scss */
+section.downloads {
+  background-color: #00376a;
+  background: linear-gradient(to right, #00376a 30%, #336a9d 50%, #00376a 70%);
 }
-/* line 680, futbolitos.scss */
+/* line 870, futbolitos.scss */
+section.downloads .downloads-content {
+  padding: 0.5em 3em;
+}
+/* line 873, futbolitos.scss */
 section.downloads .downloads-content .wallpaper-item {
   text-align: center;
 }
-/* line 684, futbolitos.scss */
+/* line 877, futbolitos.scss */
 section.downloads .downloads-content .wallpaper-item a span {
   color: white;
   display: block;
   margin: 1em 0em 3em;
 }
-/* line 691, futbolitos.scss */
+/* line 884, futbolitos.scss */
 section.downloads .downloads-content .wallpaper-item a:hover {
   color: white;
   text-decoration: underline;
 }
-/* line 695, futbolitos.scss */
+/* line 888, futbolitos.scss */
 section.downloads .downloads-content .wallpaper-item a:hover span {
   display: block;
   margin: 1em 0em 3em;
 }
 
+/* line 898, futbolitos.scss */
+section.games {
+  min-height: 600px;
+  background: #fcac01 url("../img/back_games.png") no-repeat center top;
+  background: url("../img/back_games.png") no-repeat center top, linear-gradient(to top right, #fcac01, #fcc602);
+}
+
 /* STORE */
-/* line 706, futbolitos.scss */
+/* line 905, futbolitos.scss */
 section.store {
   min-height: 400px;
 }
-/* line 709, futbolitos.scss */
+/* line 908, futbolitos.scss */
 section.store iframe {
   height: 1300px;
   width: 100%;
 }
 
+/* line 914, futbolitos.scss */
+section.under-construction {
+  min-height: 420px;
+  background: #339f1e url("../img/back_coming.png") no-repeat top center;
+  background: url("../img/back_coming.png") no-repeat top center, linear-gradient(to right, #339f1e 30%, #4ccd36 50%, #339f1e 70%);
+}
+
 /* LICENSE */
-/* line 716, futbolitos.scss */
+/* line 921, futbolitos.scss */
 section.license {
+  background: #00376a;
   background: linear-gradient(to right, #00376a 30%, #336a9d 50%, #00376a 70%);
 }
-/* line 719, futbolitos.scss */
+/* line 925, futbolitos.scss */
 section.license .license-content {
-  padding: 3em;
+  padding: 1em 3em;
 }
-/* line 722, futbolitos.scss */
+/* line 928, futbolitos.scss */
 section.license .license-content .license-info {
   margin-bottom: 6em;
   position: relative;
 }
-/* line 726, futbolitos.scss */
+/* line 932, futbolitos.scss */
 section.license .license-content .license-info .image {
   display: inline-block;
   position: absolute;
@@ -717,11 +932,11 @@ section.license .license-content .license-info .image {
   right: -10px;
   width: 200px;
 }
-/* line 733, futbolitos.scss */
+/* line 939, futbolitos.scss */
 section.license .license-content .license-info .image img {
   width: 100%;
 }
-/* line 738, futbolitos.scss */
+/* line 944, futbolitos.scss */
 section.license .license-content .license-info h3 {
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
   bottom: -14px;
@@ -733,7 +948,7 @@ section.license .license-content .license-info h3 {
   position: relative;
   z-index: 100;
 }
-/* line 751, futbolitos.scss */
+/* line 957, futbolitos.scss */
 section.license .license-content .license-info h3:before {
   content: '';
   position: absolute;
@@ -746,48 +961,54 @@ section.license .license-content .license-info h3:before {
   -ms-transform: skewY(-2.5deg);
   -o-transform: skewY(-2.5deg);
   transform: skewY(-2.5deg);
-  transition: background-color 0.5s ease;
 }
-/* line 766, futbolitos.scss */
+/* line 971, futbolitos.scss */
 section.license .license-content .license-info h3.orange {
   background-color: #f26b14;
   color: white;
 }
-/* line 771, futbolitos.scss */
+/* line 976, futbolitos.scss */
 section.license .license-content .license-info h3.orange:before {
   background-color: #f26b14;
 }
-/* line 775, futbolitos.scss */
+/* line 980, futbolitos.scss */
 section.license .license-content .license-info h3.yellow {
   background-color: #f8b212;
   color: white;
 }
-/* line 780, futbolitos.scss */
+/* line 985, futbolitos.scss */
 section.license .license-content .license-info h3.yellow:before {
   background-color: #f8b212;
   color: white;
 }
-/* line 785, futbolitos.scss */
-section.license .license-content .license-info p {
+/* line 990, futbolitos.scss */
+section.license .license-content .license-info div {
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
   color: white;
   display: inline-block;
   margin: 0px;
-  padding: 3em 2em 2em;
+  padding: 2em;
   position: relative;
   width: 100%;
 }
-/* line 794, futbolitos.scss */
-section.license .license-content .license-info p a {
+/* line 999, futbolitos.scss */
+section.license .license-content .license-info div a {
   color: white;
   text-decoration: underline;
 }
-/* line 799, futbolitos.scss */
-section.license .license-content .license-info p strong {
+/* line 1004, futbolitos.scss */
+section.license .license-content .license-info div h4 {
   font-size: 1.1em;
+  color: white;
+  font-weight: bold;
 }
-/* line 803, futbolitos.scss */
-section.license .license-content .license-info p:before {
+/* line 1010, futbolitos.scss */
+section.license .license-content .license-info div p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+/* line 1015, futbolitos.scss */
+section.license .license-content .license-info div:before {
   content: '';
   position: absolute;
   left: 0;
@@ -799,36 +1020,50 @@ section.license .license-content .license-info p:before {
   -ms-transform: skewY(1.5deg);
   -o-transform: skewY(1.5deg);
   transform: skewY(1.5deg);
-  transition: background-color 0.5s ease;
 }
-/* line 818, futbolitos.scss */
-section.license .license-content .license-info p.orange {
+/* line 1029, futbolitos.scss */
+section.license .license-content .license-info div.orange {
   background-color: #f26b14;
 }
-/* line 822, futbolitos.scss */
-section.license .license-content .license-info p.orange:before {
+/* line 1033, futbolitos.scss */
+section.license .license-content .license-info div.orange:before {
   background-color: #f26b14;
 }
-/* line 826, futbolitos.scss */
-section.license .license-content .license-info p.blue {
+/* line 1037, futbolitos.scss */
+section.license .license-content .license-info div.orange:after {
+  background-color: #f26b14;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 100%;
+  height: 30px;
+  -webkit-transform: skewY(-1.5deg);
+  -moz-transform: skewY(-1.5deg);
+  -ms-transform: skewY(-1.5deg);
+  -o-transform: skewY(-1.5deg);
+  transform: skewY(-1.5deg);
+}
+/* line 1052, futbolitos.scss */
+section.license .license-content .license-info div.blue {
   background-color: #4aa3f4;
 }
-/* line 830, futbolitos.scss */
-section.license .license-content .license-info p.blue:before {
+/* line 1056, futbolitos.scss */
+section.license .license-content .license-info div.blue:before {
   background-color: #4aa3f4;
 }
 
 /* CONTACT */
-/* line 841, futbolitos.scss */
+/* line 1068, futbolitos.scss */
 section.contact .contact-content {
-  padding: 3em;
+  padding: 0.5em 3em;
 }
-/* line 844, futbolitos.scss */
+/* line 1071, futbolitos.scss */
 section.contact .contact-content .contact-info {
   margin-bottom: 6em;
   position: relative;
 }
-/* line 848, futbolitos.scss */
+/* line 1075, futbolitos.scss */
 section.contact .contact-content .contact-info .image {
   display: inline-block;
   position: absolute;
@@ -836,11 +1071,11 @@ section.contact .contact-content .contact-info .image {
   right: 50px;
   width: 200px;
 }
-/* line 855, futbolitos.scss */
+/* line 1082, futbolitos.scss */
 section.contact .contact-content .contact-info .image img {
   width: 100%;
 }
-/* line 860, futbolitos.scss */
+/* line 1087, futbolitos.scss */
 section.contact .contact-content .contact-info h3 {
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
   bottom: -14px;
@@ -852,7 +1087,7 @@ section.contact .contact-content .contact-info h3 {
   position: relative;
   z-index: 100;
 }
-/* line 873, futbolitos.scss */
+/* line 1100, futbolitos.scss */
 section.contact .contact-content .contact-info h3:after {
   background-color: #00376a;
   content: '';
@@ -866,22 +1101,22 @@ section.contact .contact-content .contact-info h3:after {
   transform: translateY(-95px) rotate(-4deg);
   transition: background-color 0.5s ease;
 }
-/* line 887, futbolitos.scss */
+/* line 1114, futbolitos.scss */
 section.contact .contact-content .contact-info h3.orange {
   background-color: #f26b14;
   color: white;
 }
-/* line 892, futbolitos.scss */
+/* line 1119, futbolitos.scss */
 section.contact .contact-content .contact-info h3.yellow {
   background-color: #f8b212;
   color: white;
 }
-/* line 897, futbolitos.scss */
+/* line 1124, futbolitos.scss */
 section.contact .contact-content .contact-info h3.yellow {
   background-color: #f8b212;
   color: white;
 }
-/* line 902, futbolitos.scss */
+/* line 1129, futbolitos.scss */
 section.contact .contact-content .contact-info p {
   box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
   color: white;
@@ -894,25 +1129,91 @@ section.contact .contact-content .contact-info p {
   text-align: center;
   width: 100%;
 }
-/* line 914, futbolitos.scss */
+/* line 1141, futbolitos.scss */
 section.contact .contact-content .contact-info p a {
   color: white;
   text-decoration: underline;
 }
-/* line 919, futbolitos.scss */
+/* line 1146, futbolitos.scss */
 section.contact .contact-content .contact-info p strong {
   font-size: 1.1em;
 }
-/* line 924, futbolitos.scss */
+/* line 1151, futbolitos.scss */
 section.contact .contact-content .contact-info p.orange {
   background-color: #f26b14;
 }
-/* line 928, futbolitos.scss */
+/* line 1155, futbolitos.scss */
 section.contact .contact-content .contact-info p.blue {
   background-color: #4aa3f4;
 }
 
-/* line 938, futbolitos.scss */
+/* line 1164, futbolitos.scss */
+section.about {
+  background: #4aa3f4;
+  height: 100%;
+}
+/* line 1168, futbolitos.scss */
+section.about .about-content {
+  padding: 1em 3em;
+  margin-bottom: 6em;
+}
+/* line 1173, futbolitos.scss */
+section.about h3 {
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  color: white;
+  background: #005ea9;
+  bottom: -14px;
+  display: inline-block;
+  font-family: 'Cartwheel';
+  font-size: 2rem;
+  margin: 0px 0px 0px 20px;
+  padding: 0.8em 0.8em 0.2em;
+  position: relative;
+  z-index: 100;
+}
+/* line 1188, futbolitos.scss */
+section.about h3:before {
+  content: '';
+  background: #005ea9;
+  position: absolute;
+  left: 0;
+  top: -7px;
+  width: 100%;
+  height: 30px;
+  -webkit-transform: skewY(-2.5deg);
+  -moz-transform: skewY(-2.5deg);
+  -ms-transform: skewY(-2.5deg);
+  -o-transform: skewY(-2.5deg);
+  transform: skewY(-2.5deg);
+}
+/* line 1203, futbolitos.scss */
+section.about div.content {
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  color: white;
+  background: #3390e5;
+  display: inline-block;
+  margin: 0px;
+  padding: 3em 2em 2em;
+  position: relative;
+  width: 100%;
+}
+/* line 1214, futbolitos.scss */
+section.about div.content:before {
+  content: '';
+  background: #3390e5;
+  position: absolute;
+  left: 0;
+  top: -12px;
+  width: 100%;
+  height: 30px;
+  -webkit-transform: skewY(1.5deg);
+  -moz-transform: skewY(1.5deg);
+  -ms-transform: skewY(1.5deg);
+  -o-transform: skewY(1.5deg);
+  transform: skewY(1.5deg);
+}
+
+/* line 1231, futbolitos.scss */
 .clearfix {
   clear: both;
 }
